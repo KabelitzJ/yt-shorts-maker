@@ -1,12 +1,12 @@
 from generate_content import image_to_text, text_to_mp3
 
 def main():
-  text = image_to_text('./test/tumblr_mjs0wx09on1s8792uo1_1280.png')
+  text = image_to_text('./result/greentext/mt4v52fso7d51.jpg')
 
   # for line in text:
   #   print(line)
 
-  audio = text_to_mp3("./audio.mp3", ["Hello World"])
+  text_to_mp3(text)
 
 if __name__ == "__main__":
   main()

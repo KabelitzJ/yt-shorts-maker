@@ -24,7 +24,7 @@ def text_to_mp3(text: list[str]):
     full_text += line + ","
 
   session_id = "29e72eb587092137fbe1e42b3178098a"
-  tts(session_id, full_text)
+  return tts(session_id, full_text)
 
 def tts(session_id: str, text: str, speaker: str = "en_us_001"):
   text = text.replace("+", "plus")
@@ -47,30 +47,28 @@ def tts(session_id: str, text: str, speaker: str = "en_us_001"):
     return output_data
 
   vstr = [r.json()["data"]["v_str"]][0]
-  msg = [r.json()["message"]][0]
-  scode = [r.json()["status_code"]][0]
-  log = [r.json()["extra"]["log_id"]][0]
+  # msg = [r.json()["message"]][0]
+  # scode = [r.json()["status_code"]][0]
+  # log = [r.json()["extra"]["log_id"]][0]
   
-  dur = [r.json()["data"]["duration"]][0]
-  spkr = [r.json()["data"]["speaker"]][0]
+  # dur = [r.json()["data"]["duration"]][0]
+  # spkr = [r.json()["data"]["speaker"]][0]
 
   b64d = base64.b64decode(vstr)
 
   with open("./result/audio/voice.mp3", "wb") as out:
     out.write(b64d)
 
-  output_data = {
-    "status": msg.capitalize(),
-    "status_code": scode,
-    "duration": dur,
-    "speaker": spkr,
-    "log": log
-  }
-
-  print(output_data)
+  # output_data = {
+  #   "status": msg.capitalize(),
+  #   "status_code": scode,
+  #   "duration": dur,
+  #   "speaker": spkr,
+  #   "log": log
+  # }
 
   # if play is True:
   #   playsound.playsound(filename)
   #   os.remove(filename)
 
-  return output_data
+  return [r.json()["data"]["duration"]][0]

@@ -1,0 +1,16 @@
+28-01-2023-13.04.05: Starting Retrieval from: /r/greentext
+28-01-2023-13.04.06: Query return time for ALL:0.5780208110809326,
+Total Found: 5
+28-01-2023-13.04.06: total unique submissions: 5
+28-01-2023-13.04.06: Query return time for :greentext: 0.7143821716308594
+28-01-2023-13.04.06: 5 images found on greentext
+28-01-2023-13.04.06: DL From: greentext - Filename: result/greentext/16nv3pfihhw81.jpg - URL:https://i.redd.it/16nv3pfihhw81.jpg
+28-01-2023-13.04.08: DL From: greentext - Filename: result/greentext/248c6hwr04121.jpg - URL:https://i.redd.it/248c6hwr04121.jpg
+28-01-2023-13.04.10: DL From: greentext - Filename: result/greentext/mt4v52fso7d51.jpg - URL:https://i.redd.it/mt4v52fso7d51.jpg
+28-01-2023-13.04.12: DL From: greentext - Filename: result/greentext/opo1w5kps7a71.png - URL:https://i.redd.it/opo1w5kps7a71.png
+28-01-2023-13.04.14: DL From: greentext - Filename: result/greentext/rjjq31qtl6231.jpg - URL:https://i.redd.it/rjjq31qtl6231.jpg
+28-01-2023-13.04.17: Download Complete from greentext
+5 - Images Downloaded
+Query limit: 5 
+Already downloaded: 0 
+
